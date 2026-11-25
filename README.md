@@ -27,10 +27,24 @@ It also demonstrates switching between two inference model versions (V1 and V2).
 
 ## Running the Project
 
-1. Open the project in VS Code.
-2. Build it using PlatformIO.
-3. Start the Wokwi simulation.
-4. Run Node-RED and open the dashboard.
-5. Observe the sensor readings and status updates.
+### Prerequisites
+- Visual Studio Code
+- PlatformIO IDE extension
+- Wokwi ESP32 simulator
+- Node-RED with Dashboard 2.0 installed
+
+### Setup and Execution
+
+1. **Open the Project:** Open the project directory in Visual Studio Code.
+2. **Configure the Environment:** Verify the PlatformIO configuration and required project dependencies.
+3. **Build the Firmware:** Use PlatformIO to compile the ESP32 application.
+4. **Launch the Simulation:** Start the Wokwi simulation and monitor the serial output for sensor readings, condition classifications, and model version updates.
+5. **Start the Dashboard:** Run Node-RED and deploy the flow configured to receive sensor data through the `/api/sensor` HTTP endpoint.
+6. **Monitor System Output:** Open the Node-RED dashboard to observe temperature, humidity, and operating status updates in real time.
+
+### Expected Results
+
+The simulation displays sensor readings and classifies operating conditions as **NORMAL**, **WARNING**, or **CRITICAL**. The system also demonstrates switching between inference model versions V1 and V2, with the resulting data visualized on the Node-RED dashboard.
+
 
 
